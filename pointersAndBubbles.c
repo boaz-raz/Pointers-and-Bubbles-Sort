@@ -21,7 +21,8 @@ int values[] = {7, 3, 9, 4, 6, 1, 2, 8, 5};
 
 // function to print out the values array
 void printValues(){
-  for (int i = 0; i < MAX; i++) {
+  int i;
+  for (i = 0; i < MAX; i++) {
     printf(" %d", values[i] );
 
   }
@@ -31,8 +32,10 @@ void printValues(){
 
 // sort and compare the values array
 void sort(){
-  for (int i = 0; i < (MAX - 1); i++) {
-    for (int j = 0; j < (MAX - 1); j++) {
+  int i;
+  int j;
+  for (i = 0; i < (MAX - 1); i++) {
+    for (j = 0; j < (MAX - 1); j++) {
 
       if (values[j] > values[j + 1]){
 
